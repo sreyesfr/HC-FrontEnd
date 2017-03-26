@@ -74,5 +74,8 @@
     margin: 0 auto;
 }
 
+.fixed-table-toolbar .search{
+    width: 30%;
+}
 
 
