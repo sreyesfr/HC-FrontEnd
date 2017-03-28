@@ -133,6 +133,8 @@
                             <div class="content table-responsive table-full-width" style="padding-top:0px;">
                                 <table id="bootstrap-table" class="table">
                                     <thead>
+                                        <th data-field="VIP" class="text-center" data-sortable="true">VIP</th>
+                                        <th data-field="Donor" class="text-center" data-sortable="true">Donor</th>
                                         <th data-field="firstName" data-sortable="true">First Name</th>
                                         <th data-field="lastName" data-sortable="true">Last Name</th>
                                         <th data-field="email" data-sortable="true">Email</th>
@@ -141,68 +143,100 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Dakota</td>
                                             <td>Rice</td>
                                             <td>dakota.rice@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Minerva</td>
                                             <td>Hooper</td>
+                                            
                                             <td>minerva.hooper@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Sage</td>
                                             <td>Rodriguez</td>
+                                            
                                             <td>sage.rodriguez@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Philip</td>
                                             <td>Chaney</td>
+                                            
                                             <td>philip.chaney@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Doris</td>
                                             <td>Greene</td>
+                                            
                                             <td>doris.greene@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Mason</td>
                                             <td>Porter</td>
+                                            
                                             <td>mason.porter@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Alden</td>
                                             <td>Chen</td>
+                                            
                                             <td>alden.chen@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Colton</td>
                                             <td>Hodges</td>
+                                            
                                             <td>colton.hodges@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Illana</td>
                                             <td>Nelson</td>
+                                            
                                             <td>illana.nelson@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Nicole</td>
                                             <td>Lane</td>
+                                            
                                             <td>nicole.lane@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
                                         <tr>
+                                            <td><div class="vip"><i class="fa fa-star-o fa-2x"></i></div></td>
+                                            <td><i class="fa fa-heart-o fa-2x"></i></td>
                                             <td>Chaim</td>
                                             <td>Saunders</td>
+                                            
                                             <td>chaim.saunders@example.com</td>
                                             <td>3/10/2017</td>
                                         </tr>
@@ -252,6 +286,30 @@
 
 
 </body>
+
+    <style>
+        .fa-star-o {
+            color: #f9c731;
+        }
+        .fa-star {
+            color: #f9c731;
+        }
+
+        .vip:hover .fa-star-o:before {
+            content: "\f005";
+        }
+       
+        /*.vip:hover .fa-star-o,
+        .vip .fa-star {
+            display: none;
+        }
+        .vip:hover .fa-star {
+            display: inline;
+        }
+
+        */
+    </style>
+
     <!--   Core JS Files   -->
     <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
     <script src="../assets/js/jquery-ui.min.js" type="text/javascript"></script>
@@ -388,39 +446,7 @@
             });  
 
             $('.pull-left.search').find('input').attr('placeholder','Search...');
-
-            //$('.pull-left.search').find('input').wrap('<div class="row" id="rowWrapper"></div>');
-            //$('.pull-left.search').find('input').wrap('<div class="col-md-10"></div>');
-            
-            //$('#rowWrapper').append('<div class="col-md-2" id="someId"></div>');
-            //$('#someId').append('<button type="button" class="btn btn-fill btn-info">Create Member</button>');
-
-            //$('.pull-left.search').find('input').after('<button type="button" class="btn btn-fill btn-info">Create Member</button>')
-            //$('.pull-left.search').find('input').wrap('<div class="input-group"></div>');
-            //$('.pull-left.search').find('input').before('<span class="input-group-addon"><i class="fa fa-search"></i>');
-            //$('.pull-left.search').find('input').after('</div>');
-        });
-        /*function customSearch() {
-            // Declare variables 
-            var input, filter, table, tr, td, i;
-            input = document.getElementById("searchInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("bootstrap-table");
-            tr = table.getElementsByTagName("tr");
-
-            // Loop through all table rows, and hide those who don't match the search query
-            //Eventually table will start empty and we will search the database here
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                } 
-            }
-        }  */     
+        });    
     </script>
 
 </html>

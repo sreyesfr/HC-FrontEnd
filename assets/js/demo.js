@@ -464,9 +464,13 @@ demo = {
         	swal("Here's a message!", "It's pretty, isn't it?")
 
     	}else if(type == 'success-message'){
-        	swal("Good job!", "You clicked the button!", "success")
+        	swal("Visitor added!", "Click OK to return to dashboard.", "success")
 
-    	}else if(type == 'warning-message-and-cofirmation'){
+    	}else if(type=='add-visitor'){
+        //code here to add visitor to system
+        swal("Visitor added!", "Click OK to return to dashboard.", "success")
+      }
+      else if(type == 'warning-message-and-cofirmation'){
         	swal({  title: "Are you sure?",
             	    text: "You will not be able to recover this imaginary file!",
             	    type: "warning",
