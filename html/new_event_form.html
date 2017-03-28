@@ -119,82 +119,24 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div class="card">
-                            <div class="header">Create new member</div>
+                            <div class="header">Create new event</div>
                             <div class="content">
                                 <form method="#" action="#">
                                     <div class="form-group">
-                                        <label class="control-label">First Name <star>*</star></label>
-                                        <input class="form-control" name="fname" type="text" required="true"/>
+                                        <label class="control-label">Name <star>*</star></label>
+                                        <input class="form-control" name="name" type="text" required="true"/>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Last Name <star>*</star></label>
-                                        <input class="form-control" name="lname" type="text" required="true"/>
+                                        <label class="control-label">Date of Event <star>*</star></label>
+                                        <input type="text" class="form-control datetimepicker" placeholder="03/27/2017 12:00 AM" required="true"/> 
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Email Address <star>*</star></label>
-                                        <input class="form-control" name="email" type="text" email="true" required="true"/>
+                                        <label>Location</label>
+                                        <input type="text" placeholder="Holocaust Center" class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <label>Zip Code</label>
-                                        <input type="zip" placeholder="12345" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Holocaust Family Connection</label>
-                                        <select multiple name="holocaustConnection" class="selectpicker" data-title="Select all that apply" data-style="btn-info btn-fill btn-block" data-menu-style="dropdown-blue">   
-                                            <option value="mo">Mother</option>                        
-                                            <option value="fa">Father</option>  
-                                            <option value="gm">Grandmother</option>       
-                                            <option value="gf">Grandfather</option>                 
-                                            <option value="au">Aunt</option>                        
-                                            <option value="un">Uncle</option>
-                                            <option value="si">Sister</option>                        
-                                            <option value="br">Brother</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Interested Programs</label>
-                                        <select multiple name="interestedPrograms" class="selectpicker" data-title="Select all that apply" data-style="btn-info btn-fill btn-block" data-menu-style="dropdown-blue">   
-                                            <option value="tt">Teacher Training</option>                        
-                                            <option value="ms">Movie Showings</option>  
-                                            <option value="go">Gallery Openings</option>       
-                                            <option value="st">Survivor Testimonials</option>                                  
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Continued Engagement</label>
-                                        <select multiple name="continuedEngagement" class="selectpicker" data-title="Select all that apply" data-style="btn-info btn-fill btn-block" data-menu-style="dropdown-blue">   
-                                            <option value="vo">Volunteer</option>                        
-                                            <option value="do">Donor</option>  
-                                            <option value="se">Something else?</option>       
-                                        </select>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                               <label>Donor</label>
-                                                <label class="radio" style="padding-bottom:2%;">
-                                                    <input type="radio" data-toggle="radio" name="optionsDonor" value="yes" checked="">Yes
-                                                </label>
-                                                <label class="radio">
-                                                    <input type="radio" data-toggle="radio" name="optionsDonor" value="no">No
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                             <div class="form-group">
-                                               <label>VIP</label>
-                                                <label class="radio" style="padding-bottom:2%;">
-                                                    <input type="radio" data-toggle="radio" name="optionsVip" value="yes" checked="">Yes
-                                                </label>
-                                                <label class="radio">
-                                                    <input type="radio" data-toggle="radio" name="optionsVip" value="no">No
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Notes</label>
-                                        <textarea type="text" rows="5" placeholder="Loved the gallery opening!" class="form-control"></textarea>
+                                        <label>Description</label>
+                                        <textarea type="text" rows="5" placeholder="Will be showing new movie featuring a Holocaust survivor." class="form-control"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-fill btn-info">Submit</button>
                                 </form>
@@ -301,6 +243,11 @@
         $('.row.match-height').each(function() {
             $(this).find('.card').not('.card .card').matchHeight(); // Not .card .card prevents collapsible cards from taking height
         });
+        $().ready(function(){
+            // Init Sliders 
+            demo.initFormExtendedSliders();
+            // Init DatetimePicker
+            demo.initFormExtendedDatetimepickers();
+        });   
     </script>
-
 </html>
