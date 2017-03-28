@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Holocaust Center of Pittsburgh</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Light Bootstrap Dashboard core CSS    -->
+    <link href="../assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../assets/css/demo.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="../assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="dashboard.html">Holocaust Center of Pittsburgh</a>
+                </div>
+                <div class="collapse navbar-collapse">
+
+                    <form class="navbar-form navbar-left navbar-search-form" role="search">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" value="" class="form-control" placeholder="Search...">
+                        </div>
+                    </form>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="analytics.html">
+                                <i class="pe-7s-graph1"></i>
+                                <p>Analytics</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="members.html">
+                                <i class="pe-7s-user"></i>
+                                <p>Members</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="events.html">
+                                <i class="pe-7s-date"></i>
+                                <p>Events</p>
+                            </a>
+                        </li>
+
+                        <li class="dropdown dropdown-with-icons">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-list"></i>
+                                <p class="hidden-md hidden-lg">
+                                    More
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu dropdown-with-icons">
+                                <li>
+                                    <a href="#">
+                                        <i class="pe-7s-mail"></i> Messages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="pe-7s-help1"></i> Help Center
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="pe-7s-tools"></i> Settings
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="pe-7s-lock"></i> Lock Screen
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-danger">
+                                        <i class="pe-7s-close-circle"></i>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="card">
+                            <div class="header">Create new member</div>
+                            <div class="content">
+                                <form method="#" action="#">
+                                    <div class="form-group">
+                                        <label class="control-label">First Name <star>*</star></label>
+                                        <input class="form-control" name="fname" type="text" required="true"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Last Name <star>*</star></label>
+                                        <input class="form-control" name="lname" type="text" required="true"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Email Address <star>*</star></label>
+                                        <input class="form-control" name="email" type="text" email="true" required="true"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Zip Code</label>
+                                        <input type="zip" placeholder="12345" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Holocaust Family Connection</label>
+                                        <select multiple name="holocaustConnection" class="selectpicker" data-title="Select all that apply" data-style="btn-default btn-block" data-menu-style="dropdown-blue">   
+                                            <option value="mo">Mother</option>                        
+                                            <option value="fa">Father</option>  
+                                            <option value="gm">Grandmother</option>       
+                                            <option value="gf">Grandfather</option>                 
+                                            <option value="au">Aunt</option>                        
+                                            <option value="un">Uncle</option>
+                                            <option value="si">Sister</option>                        
+                                            <option value="br">Brother</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Interested Programs</label>
+                                        <select multiple name="interestedPrograms" class="selectpicker" data-title="Select all that apply" data-style="btn-default btn-block" data-menu-style="dropdown-blue">   
+                                            <option value="tt">Teacher Training</option>                        
+                                            <option value="ms">Movie Showings</option>  
+                                            <option value="go">Gallery Openings</option>       
+                                            <option value="st">Survivor Testimonials</option>                                  
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Continued Engagement</label>
+                                        <select multiple name="continuedEngagement" class="selectpicker" data-title="Select all that apply" data-style="btn-default btn-block" data-menu-style="dropdown-blue">   
+                                            <option value="vo">Volunteer</option>                        
+                                            <option value="do">Donor</option>  
+                                            <option value="se">Something else?</option>       
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                               <label>Donor</label>
+                                                <label class="radio" style="padding-bottom:2%;">
+                                                    <input type="radio" data-toggle="radio" name="optionsDonor" value="yes" checked="">Yes
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" data-toggle="radio" name="optionsDonor" value="no">No
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                             <div class="form-group">
+                                               <label>VIP</label>
+                                                <label class="radio" style="padding-bottom:2%;">
+                                                    <input type="radio" data-toggle="radio" name="optionsVip" value="yes" checked="">Yes
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" data-toggle="radio" name="optionsVip" value="no">No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Notes</label>
+                                        <textarea type="text" rows="5" placeholder="Loved the gallery opening!" class="form-control"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-fill btn-info">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Analytics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Members
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Events
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; 2017 <a href="http://holocaustcenterpgh.org/">Holocaust Center of Pittsburgh</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+    <!--  Forms Validations Plugin -->
+    <script src="../assets/js/jquery.validate.min.js"></script>
+
+    <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+    <script src="../assets/js/moment.min.js"></script>
+
+    <!--  Date Time Picker Plugin is included in this js file -->
+    <script src="../assets/js/bootstrap-datetimepicker.js"></script>
+
+    <!--  Select Picker Plugin -->
+    <script src="../assets/js/bootstrap-selectpicker.js"></script>
+
+    <!--  Checkbox, Radio, Switch and Tags Input Plugins -->
+    <script src="../assets/js/bootstrap-checkbox-radio-switch-tags.js"></script>
+
+    <!--  Charts Plugin -->
+    <script src="../assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="../assets/js/bootstrap-notify.js"></script>
+
+    <!-- Sweet Alert 2 plugin -->
+    <script src="../assets/js/sweetalert2.js"></script>
+
+    <!-- Vector Map plugin -->
+    <script src="../assets/js/jquery-jvectormap.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Wizard Plugin    -->
+    <script src="../assets/js/jquery.bootstrap.wizard.min.js"></script>
+
+    <!--  Datatable Plugin    -->
+    <script src="../assets/js/bootstrap-table.js"></script>
+
+    <!--  Full Calendar Plugin    -->
+    <script src="../assets/js/fullcalendar.min.js"></script>
+
+    <!-- Light Bootstrap Dashboard Core javascript and methods -->
+    <script src="../assets/js/light-bootstrap-dashboard.js"></script>
+
+    <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+    <script src="../assets/js/demo.js"></script>
+
+    <!-- Match Heights jQuery Plugin to make all cards match up -->
+    <script src="../assets/js/jquery.matchHeight.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $('.row.match-height').each(function() {
+            $(this).find('.card').not('.card .card').matchHeight(); // Not .card .card prevents collapsible cards from taking height
+        });
+    </script>
+
+</html>
