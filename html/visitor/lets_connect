@@ -52,36 +52,69 @@
             <div class="container">
                 <div class="row">    
                     <div class="col-md-8 col-md-offset-2">
-                        <div class="header-text">
+                        <div class="header-text" style="padding-bottom:0%;">
                             <img src="../../assets/img/hclogo.jpg" style="width:20%;"></img>
-                            <h2>Gallery Opening Check-In</h2>
+                            <h2>Let's connect, John!</h2>
                             
                             <hr />
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                    <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-3">
                         <form method="#" action="#">
                             
                         <!--   if you want to have the card without animation please remove the ".card-hidden" class   -->
                             <div class="card">
-                                <div class="header">Thanks for coming by!</div>
+                                <div class="header">
+
+                                <h4 class="title">Tell us about you.</h4></br>
+                                 <div class="category">Help us get to know you better and help us provide tailored events for you by filling out the form. Rest assured, we won’t share your information with anyone.</div></br>
+
+                                </div>
+
                                 <div class="content">
-                                    <div class="form-group"id="newVisitorCheckin">
-                                        <label class="control-label">First Name <star>*</star></label>
-                                        <input class="form-control" name="fname" id="fname" type="text" required="true"/>
+                                    <div class="form-group">
+                                        <label>Holocaust Family Connection</label>
+                                        <select multiple name="holocaustConnection" class="selectpicker" data-title="Select all that apply" data-style="btn-default btn-block" data-menu-style="dropdown-blue">   
+                                            <option value="mo">Mother</option>                        
+                                            <option value="fa">Father</option>  
+                                            <option value="gm">Grandmother</option>       
+                                            <option value="gf">Grandfather</option>                 
+                                            <option value="au">Aunt</option>                        
+                                            <option value="un">Uncle</option>
+                                            <option value="si">Sister</option>                        
+                                            <option value="br">Brother</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Last Name <star>*</star></label>
-                                        <input class="form-control" name="lname" type="text" required="true"/>
+                                        <label>Interested Programs</label>
+                                        <select multiple name="interestedPrograms" class="selectpicker" data-title="Select all that apply" data-style="btn-default btn-block" data-menu-style="dropdown-blue">   
+                                            <option value="tt">Teacher Training</option>                        
+                                            <option value="ms">Movie Showings</option>  
+                                            <option value="go">Gallery Openings</option>       
+                                            <option value="st">Survivor Testimonials</option>                                  
+                                        </select>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Email Address <star>*</star></label>
-                                        <input class="form-control" name="email" type="text" email="true" required="true"/>
-                                    </div>       
+                                        <label>Continued Engagement</label>
+                                        <select multiple name="continuedEngagement" class="selectpicker" data-title="Select all that apply" data-style="btn-default btn-block" data-menu-style="dropdown-blue">   
+                                            <option value="vo">Volunteer</option>                        
+                                            <option value="do">Donor</option>  
+                                            <option value="se">Something else?</option>       
+                                        </select>
+                                    </div>
                                     <div class="form-group">
-                                        <label class="control-label">Number of Guests <star>*</star></label>
-                                        <input class="form-control" name="guests" type="text" required="true"/>
-                                    </div>      
+                                        <label>Age</label>
+                                        <select multiple name="age" class="selectpicker" data-title="Select all that apply" data-style="btn-default btn-block" data-menu-style="dropdown-blue">   
+                                            <option value="vo">18-24</option>                        
+                                            <option value="do">25-39</option>  
+                                            <option value="se">40-64</option>    
+                                            <option value="se">65+</option>      
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Zip Code</label>
+                                        <input type="zip" placeholder="12345" class="form-control">
+                                    </div>
                                 </div>
                                 <div class="footer text-center">
                                     <button type="submit" class="btn btn-fill btn-info btn-wd" onclick='app.addVisitor(document.getElementById("fname").value)'>Check-In</button>
